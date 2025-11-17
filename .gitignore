@@ -1,0 +1,42 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+
+# Virtual environments
+.venv/
+venv/
+.env/
+
+# Build / dist artifacts
+build/
+dist/
+# Keep spec file for packaging
+# *.spec  (do not ignore spec)
+
+# PyInstaller temporary files
+*.manifest
+*.toc
+
+# IDE / editor
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Output installers and generated artifacts
+Output/
+
+# Cache
+.cache/
+
+# If you want to track music assets, keep this not ignored
+# music/  # comment out to keep music tracked

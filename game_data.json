@@ -1,0 +1,88 @@
+{
+  "high_score": 18660,
+  "history": [
+    {
+      "date": "2025-08-25",
+      "time": "15:46:10",
+      "score": 270,
+      "difficulty": "Risk 20",
+      "floor": 1
+    },
+    {
+      "date": "2025-08-26",
+      "time": "10:17:03",
+      "score": 340,
+      "difficulty": "Risk 20",
+      "floor": 1
+    },
+    {
+      "date": "2025-08-26",
+      "time": "11:18:13",
+      "score": 3475,
+      "difficulty": "Risk 0",
+      "floor": 6
+    },
+    {
+      "date": "2025-08-26",
+      "time": "15:14:07",
+      "score": 18660,
+      "difficulty": "Risk 0",
+      "floor": 15
+    },
+    {
+      "date": "2025-09-08",
+      "time": "13:02:34",
+      "score": 3300,
+      "difficulty": "Risk 20",
+      "floor": 6
+    }
+  ],
+  "saved_game": {
+    "player": {
+      "x": 209.0,
+      "y": 488.0,
+      "health": 100,
+      "shield": 130,
+      "weapon": 1,
+      "score": 6245,
+      "attack_boost_active": false,
+      "attack_boost_duration": 0,
+      "attack_boost_cooldown": 0,
+      "grenade_cooldown": 0,
+      "fire_binding": "space"
+    },
+    "enemies": [
+      {
+        "x": 54.68507668618257,
+        "y": 84,
+        "health": 110
+      },
+      {
+        "x": 684.121611618823,
+        "y": 220,
+        "health": 110
+      },
+      {
+        "x": 502.0,
+        "y": 200,
+        "health": 137
+      },
+      {
+        "x": 732.0,
+        "y": 59,
+        "health": 137
+      },
+      {
+        "x": 218.76549484495627,
+        "y": 143.9541046930824,
+        "health": 123
+      },
+      {
+        "x": 377.5250069875732,
+        "y": 251,
+        "health": 123
+      }
+    ],
+    "score": 6245
+  }
+}

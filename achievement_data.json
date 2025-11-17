@@ -1,0 +1,76 @@
+{
+  "unlocked": {
+    "first_game": {
+      "date": "2025-08-19",
+      "time": "15:01:04"
+    },
+    "first_kill": {
+      "date": "2025-08-19",
+      "time": "15:12:39"
+    },
+    "killer": {
+      "date": "2025-08-19",
+      "time": "15:26:32"
+    },
+    "massacre": {
+      "date": "2025-08-19",
+      "time": "15:35:27"
+    },
+    "persistent": {
+      "date": "2025-08-25",
+      "time": "10:13:23"
+    },
+    "risk_taker": {
+      "date": "2025-08-25",
+      "time": "15:46:10"
+    },
+    "challenger": {
+      "date": "2025-08-25",
+      "time": "15:46:10"
+    },
+    "survivor": {
+      "date": "2025-08-26",
+      "time": "11:18:13"
+    },
+    "endurance": {
+      "date": "2025-08-26",
+      "time": "11:18:13"
+    },
+    "high_scorer": {
+      "date": "2025-08-26",
+      "time": "11:18:13"
+    },
+    "explorer": {
+      "date": "2025-08-26",
+      "time": "11:18:13"
+    },
+    "marksman": {
+      "date": "2025-08-26",
+      "time": "14:09:54"
+    },
+    "boss_slayer": {
+      "date": "2025-08-26",
+      "time": "14:16:54"
+    },
+    "ultimate_conqueror": {
+      "date": "2025-08-26",
+      "time": "14:56:57"
+    }
+  },
+  "progress": {},
+  "stats": {
+    "total_kills": 2464,
+    "total_boss_kills": 3,
+    "max_survival_time": 862.637,
+    "max_score": 3475,
+    "max_difficulty": 20,
+    "max_floor": 6,
+    "game_count": 41,
+    "weapon_kills": [
+      109,
+      1839,
+      174
+    ],
+    "game_completions": 1
+  }
+}
