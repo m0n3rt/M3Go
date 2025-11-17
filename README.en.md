@@ -57,10 +57,10 @@ Warrior_RimerV1.0/
 ```
 
 ## 🚀 Quick Start
-Clone (Gitee example):
+Clone (GitHub):
 ```bash
-git clone https://gitee.com/<your-namespace>/Warrior_Rimer.git
-cd Warrior_Rimer
+git clone https://github.com/m0n3rt/Warrior-RimerV1.0.git
+cd Warrior-RimerV1.0
 ```
 Install dependencies:
 ```bash
@@ -92,6 +92,11 @@ Script actions:
 Artifacts:
 - Portable exe: `dist/WarriorRimer/WarriorRimer.exe`
 - Installer: `Output/Warrior_Rimer_Setup.exe`
+
+## ⬇️ Downloads & Updates
+- Stable releases (recommended): check GitHub Releases tagged with `v*`
+  - https://github.com/m0n3rt/Warrior-RimerV1.0/releases
+- Nightly (pre-release): every push to `main` auto-updates a `nightly` pre-release with a portable zip and exe for quick testing.
 
 ## 🎮 Controls
 | Action | Key |

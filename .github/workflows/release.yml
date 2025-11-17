@@ -1,0 +1,75 @@
+name: Release
+
+on:
+  push:
+    branches: [ main, master ]
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  build-and-release:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pyinstaller
+
+      - name: Build (PyInstaller)
+        run: |
+          pyinstaller Warrior_Rimer.spec --clean
+
+      - name: Verify build outputs
+        shell: pwsh
+        run: |
+          if (!(Test-Path 'dist/WarriorRimer/WarriorRimer.exe')) {
+            Write-Error 'Expected dist/WarriorRimer/WarriorRimer.exe not found.'
+          }
+
+      - name: Set release metadata (tag/prerelease)
+        shell: pwsh
+        run: |
+          if ('${{ startsWith(github.ref, 'refs/tags/') }}' -eq 'true') {
+            echo "RELEASE_TAG=${{ github.ref_name }}" >> $env:GITHUB_ENV
+            echo "PRERELEASE=false" >> $env:GITHUB_ENV
+          } else {
+            echo "RELEASE_TAG=nightly" >> $env:GITHUB_ENV
+            echo "PRERELEASE=true" >> $env:GITHUB_ENV
+          }
+
+      - name: Package portable zip
+        shell: pwsh
+        run: |
+          $zipName = "WarriorRimer-$env:RELEASE_TAG.zip"
+          Compress-Archive -Path 'dist/WarriorRimer/*' -DestinationPath $zipName -Force
+
+      - name: Create/Update GitHub Release and upload assets
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            WarriorRimer-${{ env.RELEASE_TAG }}.zip
+            dist/WarriorRimer/WarriorRimer.exe
+          draft: false
+          prerelease: ${{ env.PRERELEASE }}
+          tag_name: ${{ env.RELEASE_TAG }}
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

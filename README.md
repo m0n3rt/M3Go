@@ -56,10 +56,10 @@ Warrior_RimerV1.0/
 ```
 
 ## 🚀 快速开始
-克隆仓库（Gitee 示例）：
+克隆仓库（GitHub）：
 ```bash
-git clone https://gitee.com/<your-namespace>/Warrior_Rimer.git
-cd Warrior_Rimer
+git clone https://github.com/m0n3rt/Warrior-RimerV1.0.git
+cd Warrior-RimerV1.0
 ```
 安装依赖：
 ```bash
@@ -91,6 +91,11 @@ cd "$PSScriptRoot"
 产物定位：
 - 便携版执行：`dist/WarriorRimer/WarriorRimer.exe`
 - 安装包：`Output/Warrior_Rimer_Setup.exe`
+
+## ⬇️ 下载与更新
+- 稳定版（推荐）：从 GitHub Releases 获取以 `v*` 标签发布的版本
+	- https://github.com/m0n3rt/Warrior-RimerV1.0/releases
+- 每次提交自动构建的 Nightly（预发布）：推送至 `main` 会自动生成/更新 `nightly` 预发布，包含 `WarriorRimer-nightly` 压缩包与可执行文件，适合尝鲜测试。
 
 ## 🎮 操作指南
 | 功能 | 按键 |
