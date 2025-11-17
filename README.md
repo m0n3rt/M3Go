@@ -9,6 +9,12 @@
 	<img src="https://img.shields.io/badge/python-3.7%2B-blue" alt="python" />
 		<img src="https://img.shields.io/badge/license-MIT-green" alt="license" />
 	<img src="https://img.shields.io/badge/platform-Windows-green" alt="platform" />
+	<a href="https://github.com/m0n3rt/Warrior-RimerV1.0/releases/latest">
+		<img src="https://img.shields.io/github/v/release/m0n3rt/Warrior-RimerV1.0?display_name=release&sort=semver&color=blue" alt="latest release" />
+	</a>
+	<a href="https://github.com/m0n3rt/Warrior-RimerV1.0/releases/tag/nightly">
+		<img src="https://img.shields.io/badge/nightly-latest-purple" alt="nightly build" />
+	</a>
 </p>
 
 </div>
