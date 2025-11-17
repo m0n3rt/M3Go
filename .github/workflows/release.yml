@@ -7,6 +7,9 @@ on:
       - 'v*'
   workflow_dispatch:
 
+permissions:
+  contents: write  # 允许创建/更新 Releases 与上传资产，修复 403 权限问题
+
 jobs:
   build-and-release:
     runs-on: windows-latest
